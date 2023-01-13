@@ -13,7 +13,12 @@ export const homePageQuery = groq`
       tags, 
       title, 
     }, 
-    title, 
+    title,
+    hero->{
+      heading, 
+      subHeading,
+      featureImage,
+    }
   }
 `
 

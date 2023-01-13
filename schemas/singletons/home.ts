@@ -59,6 +59,12 @@ export default defineType({
       validation: (rule) => rule.max(155).required(),
     }),
     defineField({
+      title: 'Hero',
+      name: 'hero',
+      type: 'reference',
+      to: [{type: 'hero'}]
+    }),
+    defineField({
       name: 'showcaseProjects',
       title: 'Showcase projects',
       description:
@@ -71,6 +77,18 @@ export default defineType({
         }),
       ],
     }),
+    // defineField({
+    //   name: 'section',
+    //   title: 'Section',
+    //   description:
+    //     'Section for the homepage',
+    //   type: 'array',
+    //   of: [
+    //     { type: 'hero' },
+    //     { type: 'page' },
+    //     { type: 'project' },
+    //   ],
+    // }),
   ],
   preview: {
     select: {

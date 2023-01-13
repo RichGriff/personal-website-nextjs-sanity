@@ -33,6 +33,8 @@ export interface HomePagePayload {
   overview?: Block[]
   showcaseProjects?: ShowcaseProject[]
   title?: string
+  content?: any
+  hero?: any
 }
 
 export interface PagePayload {
